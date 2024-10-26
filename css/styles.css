@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  /* color: #434455; */
+  color: #434455;
   background-color: #fff;
 }
 
@@ -10,7 +10,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #434455;
+  /* color: #434455; */
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -31,6 +31,13 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.navigation:hover {
+  color: #404bbf;
+}
+.navigation-studio:active {
+  color: #404bbf;
+  text-decoration: underline;
+}
 .contacts {
   font-style: normal;
   font-weight: 400;
@@ -38,47 +45,55 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.contacts:hover {
+  color: #404bbf;
+}
+
 .hero-section {
   background: #2e2f42;
 }
 
 .hero-section-title {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 56px;
   line-height: 1.07143;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 }
-/* check color here */
+
 .hero-section-button {
-  background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  background-color: #4d5ae5;
   color: #fff;
+  cursor: pointer;
+}
+.hero-section-button:hover {
+  background-color: #404bbf;
 }
 
 .block-title {
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
 .block-text {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  /* color: #434455; */
 }
 .our-team-section {
   background: #f4f4fd;
 }
 .section-general-title {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 36px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
@@ -86,7 +101,7 @@ a {
   color: #2e2f42;
 }
 .team-member-name {
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -95,18 +110,18 @@ a {
 }
 
 .team-member-position {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #434455;
+  /* color: #434455; */
 }
 .logo-studio {
   color: #f4f4fd;
 }
 .footer-text {
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
