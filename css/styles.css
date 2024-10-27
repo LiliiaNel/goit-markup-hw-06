@@ -25,8 +25,7 @@ a {
   color: #2e2f42;
 }
 
-.navigation,
-.navigation-studio {
+.navigation {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -34,12 +33,15 @@ a {
   color: #2e2f42;
 }
 
-.navigation:hover,
-.navigation-studio:hover {
+.navigation:hover {
   color: #404bbf;
 }
 
-.navigation-studio:active {
+.navigation:focus {
+  color: #404bbf;
+}
+
+.navigation:active {
   text-decoration: underline;
 }
 
