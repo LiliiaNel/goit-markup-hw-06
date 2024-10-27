@@ -51,7 +51,7 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.contacts:hover {
+.contacts a:hover {
   color: #404bbf;
 }
 
