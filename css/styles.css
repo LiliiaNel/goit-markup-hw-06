@@ -16,13 +16,13 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
-}
-.logo-web {
   color: #4d5ae5;
+}
+.logo-studio {
+  color: #2e2f42;
 }
 
 .navigation,
@@ -34,8 +34,8 @@ a {
   color: #2e2f42;
 }
 
-.navigation a:hover,
-.navigation-studio a:hover {
+.navigation:hover,
+.navigation-studio:hover {
   color: #404bbf;
 }
 
@@ -51,7 +51,8 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.contacts a:hover {
+.contact-details:hover,
+.contact-details:focus {
   color: #404bbf;
 }
 
@@ -61,7 +62,7 @@ a {
 
 .hero-section-title {
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
@@ -76,7 +77,8 @@ a {
   color: #fff;
   cursor: pointer;
 }
-.hero-section-button:hover {
+.hero-section-button:hover,
+.hero-section-button:focus {
   background-color: #404bbf;
 }
 
@@ -96,13 +98,18 @@ a {
 .our-team-section {
   background: #f4f4fd;
 }
+.our-team-card {
+  background: #ffffff;
+}
 .section-general-title {
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
   color: #2e2f42;
 }
+
 .team-member-name {
   font-weight: 500;
   font-size: 20px;
@@ -119,7 +126,7 @@ a {
   text-align: center;
   /* color: #434455; */
 }
-.logo-studio {
+.logo-studio-footer {
   color: #f4f4fd;
 }
 .footer-text {
