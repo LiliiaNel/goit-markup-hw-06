@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- #region Header-->
     <header class="page-header">
       <div class="container">
         <nav class="page-navigation">
@@ -51,8 +52,10 @@
         </address>
       </div>
     </header>
+    <!-- #endregion Header -->
 
     <main>
+      <!-- #region Section Hero-->
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-section-title">
@@ -63,10 +66,12 @@
           </button>
         </div>
       </section>
+      <!-- #endregion Section Hero -->
 
+      <!-- #region Section Features -->
       <section class="section-features">
         <div class="container">
-          <h2 hidden>Features</h2>
+          <h2 hidden class=".visually-hidden">Features</h2>
           <ul class="features-list">
             <li class="features-list-item">
               <h3 class="features-title">Strategy</h3>
@@ -99,126 +104,152 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion Section Features -->
 
-      <section class="our-team-section">
-        <div class="container container-team">
+      <!-- #region Section Team -->
+      <section class="team-section">
+        <div class="container">
           <h2 class="section-general-title">Our Team</h2>
-          <ul>
-            <li class="our-team-card">
+          <ul class="team-list">
+            <li class="team-card">
               <img
                 src="./images/team-card1.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
               />
-              <h3 class="team-member-name">Mark Guerrero</h3>
-              <p class="team-member-position">Product Designer</p>
+              <div class="team-text-container">
+                <h3 class="team-member-name">Mark Guerrero</h3>
+                <p class="team-member-position">Product Designer</p>
+              </div>
             </li>
-            <li class="our-team-card">
+            <li class="team-card">
               <img
                 src="./images/team-card2.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
               />
-              <h3 class="team-member-name">Tom Ford</h3>
-              <p class="team-member-position">Frontend Developer</p>
+              <div class="team-text-container">
+                <h3 class="team-member-name">Tom Ford</h3>
+                <p class="team-member-position">Frontend Developer</p>
+              </div>
             </li>
-            <li class="our-team-card">
+            <li class="team-card">
               <img
                 src="./images/team-card3.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
               />
-              <h3 class="team-member-name">Camila Garcia</h3>
-              <p class="team-member-position">Marketing</p>
+              <div class="team-text-container">
+                <h3 class="team-member-name">Camila Garcia</h3>
+                <p class="team-member-position">Marketing</p>
+              </div>
             </li>
-            <li class="our-team-card">
+            <li class="team-card">
               <img
                 src="./images/team-card4.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
               />
-              <h3 class="team-member-name">Daniel Wilson</h3>
-              <p class="team-member-position">UI Designer</p>
+              <div class="team-text-container">
+                <h3 class="team-member-name">Daniel Wilson</h3>
+                <p class="team-member-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- #endregion Section Team -->
 
-      <section>
-        <div class="container container-portfolio">
+      <!-- #region Section Portfolio -->
+      <section class="container-portfolio">
+        <div class="container">
           <h2 class="section-general-title">Our Portfolio</h2>
-          <ul>
-            <li>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
               <img
                 src="./images/portfolio1.jpg"
                 alt="Banking App"
                 width="360"
                 height="300"
+                class="portfolio-img"
               />
-              <h3 class="block-title">Banking App</h3>
-              <p class="block-text">App</p>
+              <div class="portfolio-desc-box">
+                <h3 class="block-title">Banking App</h3>
+                <p class="block-text">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/portfolio2.jpg"
                 alt="Cashless Payment"
                 width="360"
                 height="300"
               />
-              <h3 class="block-title">Cashless Payment</h3>
-              <p class="block-text">Marketing</p>
+              <div class="portfolio-desc-box">
+                <h3 class="block-title">Cashless Payment</h3>
+                <p class="block-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/portfolio3.jpg"
                 alt="Meditation App"
                 width="360"
                 height="300"
               />
-              <h3 class="block-title">Meditation App</h3>
-              <p class="block-text">App</p>
+              <div class="portfolio-desc-box">
+                <h3 class="block-title">Meditation App</h3>
+                <p class="block-text">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/portfolio4.jpg"
                 alt="Taxi Service"
                 width="360"
                 height="300"
               />
-              <h3 class="block-title">Taxi Service</h3>
-              <p class="block-text">Marketing</p>
+              <div class="portfolio-desc-box">
+                <h3 class="block-title">Taxi Service</h3>
+                <p class="block-text">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/portfolio5.jpg"
                 alt="Screen Illustrations"
                 width="360"
                 height="300"
               />
-              <h3 class="block-title">Screen Illustrations</h3>
-              <p class="block-text">Design</p>
+              <div class="portfolio-desc-box">
+                <h3 class="block-title">Screen Illustrations</h3>
+                <p class="block-text">Design</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-item">
               <img
                 src="./images/portfolio6.jpg"
                 alt="Online Courses"
                 width="360"
                 height="300"
               />
-              <h3 class="block-title">Online Courses</h3>
-              <p class="block-text">Marketing</p>
+              <div class="portfolio-desc-box">
+                <h3 class="block-title">Online Courses</h3>
+                <p class="block-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <!-- #endregion Section Portfolio -->
     </main>
-
+    <!-- #region Footer -->
     <footer class="footer">
-      <div class="container container-footer">
+      <div class="container">
         <a href="./index.html" class="logo"
           >Web<span class="logo-studio-footer">Studio</span></a
         >
@@ -228,5 +259,6 @@
         </p>
       </div>
     </footer>
+    <!-- #endregion Footer -->
   </body>
 </html>

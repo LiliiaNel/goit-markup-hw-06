@@ -1,0 +1,21 @@
+{
+	"Print to console": {
+		"scope": "html",
+		"prefix": "region",
+		"body":  [
+    "<!-- #region ${1} -->",
+    "  ${2}",
+    "<!-- #endregion -->"
+	],
+		"description": "Add expanded block comment"
+	},
+	"Region block comment": {
+		"prefix": "region",
+		"body": [
+			"/* #region $1 */",
+			"$2",
+			"/* #endregion */"
+		],
+		"description": "A snippet that create Documentation Comment Block."
+	},
+}
