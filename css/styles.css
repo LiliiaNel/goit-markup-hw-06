@@ -39,7 +39,7 @@ a {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 /* for section Features and Portfolio*/
 .general-subtitle {
@@ -48,12 +48,12 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .general-discription {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 8px;
 }
 .block-img {
   display: block;
@@ -104,6 +104,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .nav-menu-link:hover {
@@ -146,11 +147,15 @@ a {
 
 .hero-section {
   background: #2e2f42;
-  display: flex;
-  flex-direction: column;
+
+  padding: 188px 0;
 }
 .hero-section .container {
+  display: flex;
+  flex-direction: column;
   align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .hero-title {
   display: block;
@@ -159,13 +164,13 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  width: 496px;
+  max-width: 496px;
   margin-top: 68px;
 }
-.button-box {
+/* .button-box {
   display: flex;
   justify-content: center;
-}
+} */
 .hero-button {
   display: block;
   font-weight: 500;
@@ -182,6 +187,8 @@ a {
   padding: 0;
   margin-top: 48px;
   margin-bottom: 68px;
+  margin-left: 495px;
+  margin-right: 494px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -200,7 +207,6 @@ a {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -208,7 +214,7 @@ a {
 }
 .features-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .features-list-item {
   flex-basis: calc((100% - 72px) / 4);
@@ -242,6 +248,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .team-position {
   font-size: 16px;
@@ -254,8 +261,8 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 8px;
-  padding: 32px 16px;
+  /* gap: 8px; */
+  padding: 32px 0;
 }
 /* #endregion Team */
 
@@ -286,10 +293,13 @@ a {
 /* #region Footer */
 .footer {
   background: #2e2f42;
-}
-.footer .container {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.logo-link-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-studio-footer {
   color: #f4f4fd;
@@ -300,7 +310,6 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 264px;
-  margin-top: 16px;
+  max-width: 264px;
 }
 /* #endregion Footer*/
