@@ -8,6 +8,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -19,9 +20,6 @@ ul {
 a {
   text-decoration: none;
   color: #434455;
-}
-.icon {
-  fill: #2a2a2a;
 }
 
 .container {
@@ -43,6 +41,7 @@ a {
   color: #2e2f42;
   margin-bottom: 72px;
 }
+
 /* for section Features and Portfolio*/
 .general-subtitle {
   font-weight: 500;
@@ -116,10 +115,15 @@ a {
 .nav-menu-link:focus {
   color: #404bbf;
 }
-
-.nav-menu-link:active {
-  text-decoration: underline;
+/* to be changed */
+.nav-menu-link::after {
+  content: "";
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background-color: #404bbf;
 }
+/* end to be changed */
 
 .contacts {
   font-style: normal;
@@ -272,6 +276,9 @@ a {
   /* gap: 8px; */
   padding: 32px 0;
 }
+.links-team {
+  gap: 24px;
+}
 /* #endregion Team */
 
 /* #region Portfolio */
@@ -319,5 +326,40 @@ a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+.social-media-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 96px;
+  color: #fff;
+}
+.social-list {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+.social-list .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+
+.social-list .icon {
+  fill: #f4f4fd;
+}
+.footer-links-container {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+.links-footer {
+  gap: 16px;
 }
 /* #endregion Footer*/
