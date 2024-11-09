@@ -20,6 +20,9 @@ a {
   text-decoration: none;
   color: #434455;
 }
+.icon {
+  fill: #2a2a2a;
+}
 
 .container {
   max-width: 1158px;
@@ -154,7 +157,7 @@ a {
     url("../images/people-office.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   padding: 188px 0;
 }
 .hero-section .container {
