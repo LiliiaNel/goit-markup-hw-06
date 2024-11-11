@@ -4,6 +4,12 @@ body {
   font-style: normal;
   color: #434455;
   background-color: #fff;
+  *:hover,
+  *:focus {
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out,
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out,
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out;
+  }
 }
 h1,
 h2,
@@ -356,14 +362,14 @@ a {
   cursor: pointer;
 }
 /* Project card with overlay */
-.app-item-box {
+.portfolio-item-box {
   position: relative;
   overflow: hidden;
   width: 360px;
   height: 300px;
 }
 
-.app-overlay-text {
+.overlay-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -380,10 +386,10 @@ a {
   padding: 40px 32px 164px;
   cursor: pointer;
 }
-.app-item-box:hover .app-overlay-text,
-.app-item-box:focus .app-overlay-text,
-.portfolio-hover-item:hover .app-overlay-text,
-.portfolio-hover-item:focus .app-overlay-text {
+.portfolio-item-box:hover .overlay-text,
+.portfolio-item-box:focus .overlay-text,
+.portfolio-item:hover .overlay-text,
+.portfolio-item:focus .overlay-text {
   transform: translatey(0);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
