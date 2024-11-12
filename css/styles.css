@@ -290,12 +290,7 @@ a {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .team-card:hover .social-link,
-.team-card:focus .social-link, */
-.social-link:hover,
-.social-link:focus {
-  background-color: #404bbf;
-}
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -320,24 +315,14 @@ a {
   /* gap: 8px; */
   padding: 32px 0;
 }
-/* .team-links-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 24px;
-  flex-basis: calc((100% - 72px) / 4); */
 
-/* .links-team {
-  gap: 24px;
-} */
 .social-list {
   display: flex;
   gap: 24px;
   flex-shrink: 0;
   justify-content: center;
 }
-.social-list .social-link {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,6 +334,13 @@ a {
 }
 .social-link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-card:hover .social-link,
+.team-card:focus .social-link,
+.social-link:hover,
+.social-link:focus,
+.social-link:active {
+  background-color: #404bbf;
 }
 .social-list .icon {
   fill: #f4f4fd;
@@ -472,7 +464,7 @@ a {
   gap: 16px;
 }
 .footer-social-hover {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ease-in-out;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-hover:hover,
 .footer-social-hover:focus,
