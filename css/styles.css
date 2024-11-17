@@ -314,9 +314,14 @@ a {
 .icon-input {
   position: absolute;
   display: inline-block;
-  left: 16px;
-  transform: translateY(250%);
+  top: 65%;
+  left: 24px;
+  transform: translate(-50%, -50%);
   fill: #2e2f42;
+  z-index: 999;
+}
+.icon-input:active {
+  fill: #4d5ae5;
 }
 .form-input,
 textarea {
@@ -327,12 +332,24 @@ textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 38px;
+
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input {
+  padding-left: 38px;
 }
 
 textarea {
   margin-bottom: 16px;
+  padding-left: 16px;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .form-input:focus-within,
@@ -610,6 +627,7 @@ input[type="checkbox"]:checked {
   flex-wrap: wrap;
   width: 208px;
   height: 80px;
+  margin-right: 80px;
 }
 .social-media-text {
   display: inline-block;
@@ -633,6 +651,57 @@ input[type="checkbox"]:checked {
 .footer-social-hover:focus,
 .footer-social-hover:active {
   background-color: #31d0aa;
+}
+
+.footer-subscribe-box {
+  display: flex;
+  flex-direction: column;
+  /* width: 453px;
+  height: 80px; */
+}
+.subscribe-form {
+  padding-right: 24px;
+}
+.subscribe-text {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.subscribe-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  /* margin-right: 24px; */
+}
+.button-subscribe {
+  display: inline-block;
+  border-radius: 4px;
+  /* padding: 8px 24px; */
+  width: 165px;
+  height: 40px;
+  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  border: none;
 }
 
 /* #endregion Footer*/
