@@ -119,15 +119,15 @@ a {
 }
 
 .nav-menu-link:hover,
-.nav-menu-link:focus {
+.nav-menu-link:focus,
+.nav-menu-link.current {
   color: #404bbf;
+}
+.nav-menu-link.current {
+  position: relative;
 }
 
-.current {
-  position: relative;
-  color: #404bbf;
-}
-.current::after {
+.nav-menu-link.current::after {
   content: "";
   border-radius: 2px;
   height: 4px;
@@ -138,9 +138,6 @@ a {
   display: block;
   width: 100%;
 }
-/* .current:hover::after .current:focus::after {
-  background-color: red;
-} */
 
 /* end to be changed */
 .contacts {
@@ -201,10 +198,7 @@ a {
   color: #fff;
   max-width: 496px;
 }
-/* .button-box {
-  display: flex;
-  justify-content: center;
-} */
+
 .hero-button {
   display: block;
   font-weight: 500;
@@ -226,7 +220,9 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
-.hero-button:focus {
+.hero-button:focus,
+.button-subscribe:hover,
+.button-subscribe:focus {
   background-color: #404bbf;
 }
 /* Modular form */
@@ -253,7 +249,7 @@ a {
 .modal {
   background-color: #fcfcfc;
   border-radius: 4px;
-  width: 408px;
+  max-width: 408px;
   height: 584px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -332,7 +328,7 @@ textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-top: 11px;
   padding-bottom: 11px;
-
+  width: 100%;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input {
@@ -652,16 +648,18 @@ input[type="checkbox"]:checked {
 .footer-social-hover:active {
   background-color: #31d0aa;
 }
+/* end Social media */
 
+/* Footer form */
 .footer-subscribe-box {
   display: flex;
+  align-items: baseline;
   flex-direction: column;
-  /* width: 453px;
-  height: 80px; */
+  max-width: 453px;
+  margin-right: 24px;
+  position: relative;
 }
-.subscribe-form {
-  padding-right: 24px;
-}
+
 .subscribe-text {
   display: block;
   font-weight: 500;
@@ -688,10 +686,15 @@ input[type="checkbox"]:checked {
   padding-bottom: 8px;
   /* margin-right: 24px; */
 }
+
 .button-subscribe {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   border-radius: 4px;
-  /* padding: 8px 24px; */
+  padding: 8px 24px;
   width: 165px;
   height: 40px;
   background: #4d5ae5;
@@ -702,6 +705,12 @@ input[type="checkbox"]:checked {
   text-align: center;
   color: #fff;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 110%;
+  top: 48%;
 }
-
+.button-icon {
+  display: inline;
+}
 /* #endregion Footer*/
