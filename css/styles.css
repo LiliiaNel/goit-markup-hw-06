@@ -709,10 +709,9 @@ input[type="checkbox"]:focus-visible
   display: flex;
   align-items: baseline;
   flex-direction: column;
-  gap: 24px;
+
   max-width: 453px;
   /* margin-right: 24px; */
-  position: relative;
 }
 
 .subscribe-text {
@@ -722,7 +721,12 @@ input[type="checkbox"]:focus-visible
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .subscribe-input {
   border: 1px solid #fff;
@@ -752,10 +756,10 @@ input[type="checkbox"]:focus-visible
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  /* gap: 16px; */
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-weight: 500;
@@ -766,11 +770,10 @@ input[type="checkbox"]:focus-visible
   color: #fff;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  left: 110%;
-  top: 54%;
+  cursor: pointer;
 }
 .button-icon {
   display: inline;
+  margin-left: 16px;
 }
 /* #endregion Footer*/
