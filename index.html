@@ -602,13 +602,13 @@
           method="post"
         >
           <div class="modal-form-field">
-            <label class="form-label" for="username"> Name</label>
+            <label class="form-label" for="user-name"> Name</label>
             <div class="input-wrapper">
               <input
                 class="form-input"
                 type="text"
-                name="username"
-                id="username"
+                name="user-name"
+                id="user-name"
                 autofocus
               />
               <svg class="icon-input" width="12" height="12">
@@ -638,10 +638,11 @@
           </div>
 
           <div class="modal-form-field">
-            <label class="form-label" for="comment">Comment</label>
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
-              name="comment"
-              id="comment"
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -650,12 +651,12 @@
             <input
               class="checkbox-agreement visually-hidden"
               type="checkbox"
-              name="user_argreement"
-              id="user_argreement"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="form-label label-policy-text" for="user_argreement">
+            <label class="form-label label-policy-text" for="user-privacy">
               <span class="modal-form-checkbox"
                 ><svg class="modal-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkmark"></use></svg
