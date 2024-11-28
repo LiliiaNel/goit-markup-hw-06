@@ -395,7 +395,7 @@ a {
     gap: 72px 24px;
 
     .features-list-item {
-      flex-basis: calc((100% - 72px) / 4);
+      flex-basis: calc(50% - 12px);
     }
   }
 }
@@ -405,6 +405,9 @@ a {
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
+  }
+  .features-list-item {
+    flex-basis: calc((100% - 72px) / 4);
   }
 }
 
