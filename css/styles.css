@@ -156,7 +156,14 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
+@media only screen and (min-width: 768px) {
+  .page-navigation {
+    width: auto;
+  }
+}
+
 .nav-menu-list {
   display: none;
 }
@@ -178,6 +185,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: auto;
 }
 
 .logo-studio {
