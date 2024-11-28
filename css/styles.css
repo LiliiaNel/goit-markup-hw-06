@@ -31,7 +31,7 @@ a {
 /* For Mobile 320px */
 .container {
   max-width: 288px;
-  /* padding: 0 16px; */
+  padding: 0 16px;
   padding: 0 4px;
   margin: 0 auto;
 }
@@ -72,15 +72,19 @@ a {
   color: #2e2f42;
   margin-bottom: 72px;
 }
+
+.general-subtitle {
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
 /* For Mobile */
 .features-list-item > .general-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42;
-  margin-bottom: 8px;
 }
 
 /* for section Features and Portfolio desktop*/
@@ -97,17 +101,29 @@ a {
     line-height: 1.2;
   }
 }
-/* For Mobile and Tablet*/
-.features-list-item > .general-discription {
+/* Portfolio  All screens*/
+.portfolio-item > .general-subtitle {
   font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.general-discription {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
-/* For Desktop */
+
+/* For Mobile and Tablet*/
 .features-list-item > .general-discription {
-  font-weight: 400;
+  font-weight: 500;
+}
+/* For Desktop */
+@media only screen and (min-width: 1158px) {
+  .features-list-item > .general-discription {
+    font-weight: 400;
+  }
 }
 
 /* #endregion Common-Classes */
@@ -213,23 +229,8 @@ a {
 
 .contacts {
   display: none;
-  /* font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455; */
 }
-/* @media only screen and (min-width: 768px) {
-.contacts {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-} */
+
 @media only screen and (min-width: 768px) {
   .contacts {
     display: inline;
@@ -238,6 +239,7 @@ a {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    color: #434455;
   }
 }
 
@@ -306,12 +308,21 @@ a {
 }
 .hero-title {
   display: block;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
+  max-width: 216px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+  }
 }
 
 .hero-button {
@@ -347,6 +358,7 @@ a {
 .section-features .container {
   align-content: space-around;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -361,22 +373,50 @@ a {
 }
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 .features-list-item {
-  flex-basis: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 216px) / 4);
 }
+@media only screen and (min-width: 768px) {
+  .features-list {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+
+    .features-list-item {
+      flex-basis: calc((100% - 72px) / 4);
+    }
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
+
 .icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  /* max-width: 264px; */
-  height: 112px;
-  background: #f4f4fd;
-  margin-bottom: 8px;
-  padding: 24px 100px;
+  display: none;
+}
+
+@media only screen and (min-width: 1158px) {
+  .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    /* max-width: 264px; */
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+    padding: 24px 100px;
+  }
 }
 
 /* #endregion Features */
@@ -391,10 +431,23 @@ a {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px;
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    gap: 64px 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    gap: 24px;
+  }
+}
+
 .team-card {
   flex-basis: calc((100% - 72px) / 4);
   background: #ffffff;
@@ -921,7 +974,7 @@ input[type="checkbox"]:focus-visible
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 72px;
-  padding-bottom: 40 px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
@@ -938,25 +991,30 @@ input[type="checkbox"]:focus-visible
   padding: 0;
   border: none;
   background-color: transparent;
+  width: 24px;
+  float: right;
 }
+
 @media only screen and (min-width: 768px) {
-  .mobile-menu-btn {
+  .mobile-menu-btn,
+  .mobile-menu {
     display: none;
   }
 }
-
 .mobile-menu-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-bottom: auto;
-
+}
+.mobile-menu-link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .mobile-menu-contacts {
   display: flex;
   align-items: flex-start;
@@ -973,7 +1031,7 @@ input[type="checkbox"]:focus-visible
   gap: 40px;
 }
 
-.mobile-menu.modal-btn-close {
+.mobile-menu > .modal-btn-close {
   border: #e7e9fc 1px;
   margin-left: auto;
 }
