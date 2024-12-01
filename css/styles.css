@@ -32,7 +32,6 @@ a {
 .container {
   max-width: 288px;
   padding: 0 16px;
-  padding: 0 4px;
   margin: 0 auto;
 }
 /* For tablet */
@@ -674,7 +673,7 @@ a {
   width: 288px;
   height: 280px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
+@media only screen and (min-width: 768px) {
   .portfolio-item-box > .block-img {
     width: 356px;
     height: 300px;
@@ -683,7 +682,6 @@ a {
 @media only screen and (min-width: 1158px) {
   .portfolio-item-box > .block-img {
     width: 360px;
-    height: 300px;
   }
 }
 
@@ -762,6 +760,7 @@ a {
     align-items: baseline;
     column-gap: 24px;
     row-gap: 72px;
+    padding: 0;
   }
 }
 
