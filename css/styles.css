@@ -669,18 +669,21 @@ a {
     width: 360px;
   }
 }
-.portfolio-item-box > .block-img {
-  width: 288px;
-  height: 280px;
+.portfolio-item-box .block-img {
+  width: auto;
+  height: auto;
+  object-fit: fill;
 }
+
 @media only screen and (min-width: 768px) {
-  .portfolio-item-box > .block-img {
+  .portfolio-item-box .block-img {
     width: 356px;
     height: 300px;
+    object-fit: none;
   }
 }
 @media only screen and (min-width: 1158px) {
-  .portfolio-item-box > .block-img {
+  .portfolio-item-box .block-img {
     width: 360px;
   }
 }
