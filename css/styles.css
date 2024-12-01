@@ -623,12 +623,8 @@ a {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .portfolio-list {
-    /* display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px; */
+    width: 736px;
     row-gap: 72px;
-    /* align-items: center; */
-    /* justify-content: center; */
   }
 }
 
@@ -663,7 +659,7 @@ a {
   height: 280px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .portfolio-item-box {
     width: 356px;
     height: 300px;
@@ -674,6 +670,23 @@ a {
     width: 360px;
   }
 }
+.portfolio-item-box > .block-img {
+  width: 288px;
+  height: 280px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .portfolio-item-box > .block-img {
+    width: 356px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-item-box > .block-img {
+    width: 360px;
+    height: 300px;
+  }
+}
+
 .overlay-text {
   font-weight: 400;
   font-size: 16px;
@@ -726,6 +739,14 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer {
+    background: #2e2f42;
+    padding: 96px 164px 96px 108px;
+  }
+}
+
 .footer .container {
   display: flex;
   flex-direction: column;
@@ -733,9 +754,19 @@ a {
   gap: 72px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
   .footer .container {
-    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer .container {
     flex-direction: unset;
     align-items: baseline;
     gap: unset;
@@ -746,7 +777,13 @@ a {
   margin-right: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-logo-box {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
   .footer-logo-box {
     margin-right: 120px;
   }
@@ -755,7 +792,19 @@ a {
 .logo-link-footer {
   display: inline-block;
   margin-bottom: 16px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
+
+@media only screen and (min-width: 768px) {
+  .logo-link-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-left: 0;
+    transform: none;
+  }
+}
+
 .logo-studio-footer {
   color: #f4f4fd;
 }
@@ -795,6 +844,12 @@ a {
     flex-wrap: wrap;
     width: 208px;
     height: 80px;
+    margin-right: 0;
+    justify-content: unset;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer-links-container {
     margin-right: 80px;
   }
 }
