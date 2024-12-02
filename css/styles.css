@@ -30,14 +30,14 @@ a {
 
 /* For Mobile 320px */
 .container {
-  max-width: 288px;
+  max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
 /* For tablet */
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
     padding: 0 12px;
   }
 }
@@ -273,9 +273,7 @@ a {
 
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
   .contacts-list {
-    /* display: flex; */
     flex-direction: column;
-    /* flex-wrap: wrap; */
     gap: 12px;
   }
 }
@@ -310,7 +308,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 288px;
   padding: 72px 0;
   margin: 0 auto;
 }
@@ -335,7 +332,6 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/hero-images/hero-bg-1x-tablet.jpg");
-    max-width: 736px;
     padding: 112px 0;
   }
 }
@@ -460,9 +456,7 @@ a {
   flex-direction: column;
   gap: 72px;
 }
-.features-list-item {
-  flex-basis: calc((100% - 216px) / 4);
-}
+
 @media only screen and (min-width: 768px) {
   .features-list {
     display: inline-flex;
@@ -628,15 +622,21 @@ a {
 }
 
 .portfolio-item {
-  flex-basis: calc((100% - 96px) / 6);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
+/* @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .portfolio-item {
     flex-basis: calc(50% - 12px);
   }
 }
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-item {
+    flex-basis: calc((100% - 96px) / 6);
+  }
+} */
+
 @media (hover: hover) {
   .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -658,7 +658,7 @@ a {
   height: 280px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
+@media only screen and (min-width: 768px) {
   .portfolio-item-box {
     width: 356px;
     height: 300px;
@@ -739,12 +739,19 @@ a {
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer {
     background: #2e2f42;
     padding: 96px 164px 96px 108px;
+    text-align: unset;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .footer {
+    text-align: left;
   }
 }
 
@@ -779,12 +786,6 @@ a {
   margin-right: 0;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer-logo-box {
-    margin-right: 0;
-  }
-}
-
 @media only screen and (min-width: 1158px) {
   .footer-logo-box {
     margin-right: 120px;
@@ -794,16 +795,12 @@ a {
 .logo-link-footer {
   display: inline-block;
   margin-bottom: 16px;
-  margin-left: 50%;
-  transform: translateX(-50%);
 }
 
 @media only screen and (min-width: 768px) {
   .logo-link-footer {
     display: inline-block;
     margin-bottom: 16px;
-    margin-left: 0;
-    transform: none;
   }
 }
 
@@ -817,17 +814,7 @@ a {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-}
-
-@media only screen and (min-width: 768px) {
-  .footer-text {
-    display: block;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    max-width: 264px;
-  }
+  text-align: left;
 }
 
 /* Social media */
@@ -842,11 +829,6 @@ a {
 
 @media only screen and (min-width: 768px) {
   .footer-links-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 208px;
-    height: 80px;
-    margin-right: 0;
     justify-content: unset;
   }
 }
@@ -899,11 +881,8 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .footer-subscribe-box {
-    display: flex;
     align-items: baseline;
-    flex-direction: column;
     justify-content: unset;
-    max-width: 453px;
   }
 }
 .subscribe-text {
@@ -923,10 +902,8 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .subscribe-form {
-    display: flex;
     flex-direction: unset;
     align-items: center;
-    gap: 24px;
   }
 }
 
@@ -1322,6 +1299,11 @@ input[type="checkbox"]:focus-visible
   flex-direction: column;
   gap: 24px;
   margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 .mobile-menu-socials {
   display: flex;
