@@ -137,8 +137,8 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-/* For Tablet and Desktop */
-@media only screen and (min-width: 768px) {
+/* For Desktop */
+@media only screen and (min-width: 1158px) {
   .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
