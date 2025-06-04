@@ -625,18 +625,6 @@ a {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* @media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .portfolio-item {
-    flex-basis: calc(50% - 12px);
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .portfolio-item {
-    flex-basis: calc((100% - 96px) / 6);
-  }
-} */
-
 @media (hover: hover) {
   .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -1121,7 +1109,7 @@ a {
 }
 
 .modal-textarea {
-  color: rgba(46, 47, 66, 0.4);
+  color: #434455;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1171,7 +1159,6 @@ textarea:focus-within {
 
   width: 16px;
   height: 16px;
-  /* margin-right: 8px; */
   fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);

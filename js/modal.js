@@ -1,10 +1,7 @@
 (() => {
   const refs = {
-    // Додати атрибут data-modal-open на кнопку відкриття
     openModalBtn: document.querySelector("[data-modal-open]"),
-    // Додати атрибут data-modal-close на кнопку закриття
     closeModalBtn: document.querySelector("[data-modal-close]"),
-    // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelector("[data-modal]"),
   };
 
@@ -12,7 +9,28 @@
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    // is-open це клас який буде додаватися/забиратися на бекдроп при натисканні на кнопки
     refs.modal.classList.toggle("is-open");
   }
 })();
+
+
+const form = document.querySelector(".js-login-form");
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const registerForm = event.target;
+  const name = registerForm.elements["user-name"].value.trim();
+  const email = registerForm.elements.email.value.trim();
+  const phone = registerForm.elements.phone.value.trim();
+  const comment = registerForm.elements["user-comment"].value.trim();
+  
+  const formData = {
+    name: name,
+    phone: phone,
+    email: email,
+    comment: comment,
+  };
+  console.log(formData);
+  registerForm.reset();
+};

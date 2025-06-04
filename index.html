@@ -24,7 +24,7 @@
           <a href="./index.html" class="logo"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <button type="button" class="mobile-menu-btn">
+          <button type="button" class="mobile-menu-btn js-burger-btn">
             <svg class="mobile-btn-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -764,7 +764,7 @@
           Leave your contacts and we will call you back
         </p>
         <form
-          class="modal-form"
+          class="modal-form js-login-form"
           name="usercontacts_form"
           autocomplete="on"
           method="post"
@@ -845,8 +845,8 @@
     <!-- #endregion Modal window -->
 
     <!-- #region Mobile menu -->
-    <div class="mobile-menu">
-      <button type="button" class="modal-btn-close">
+    <div class="mobile-menu js-mobile-menu">
+      <button type="button" class="modal-btn-close js-btn-close">
         <svg class="modal-btn-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
@@ -923,5 +923,6 @@
     <!-- #endregion Mobile menu -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>
